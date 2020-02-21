@@ -32,13 +32,13 @@ export default class Server {
     controllers.forEach(controller => {
       const routePath = (`${this.basePath}${controller.path}`);
       this.app.use(this.basePath, controller.router);
-      console.log(`Registering ${routePath}`);
+      console.debug(`Registering ${routePath}`);
     });
   }
 
   start() {
     this.app.listen(this.port, () => {
-      console.log(`[server.js] Server running at port ${this.port}.`);
+      console.debug(`[server.js] Server running at port ${this.port}.`);
     });
   }
 }

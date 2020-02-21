@@ -17,14 +17,14 @@ class GreeterController implements IBaseController {
   }
 
   getGreetingMessage = (req: express.Request, res: express.Response, next: express.NextFunction) => {
-    console.log('[greeter.controller.js] GET Greeting Called')
+    console.debug('[greeter.controller.js] GET Greeting Called')
     res.status(200).send(this._greetingMessage);
     next();
   }
 
   updateGreetingMessage = (req: express.Request, res: express.Response, next: express.NextFunction) => {
     const newGreeting = (req.body ? req.body.message : null);
-    console.log('[greeter.controller.js] New Message received - ', newGreeting);
+    console.debug('[greeter.controller.js] New Message received - ', newGreeting);
     if (newGreeting) {
       this._greetingMessage = newGreeting;
       res.status(200).send('Greeting message updated');
