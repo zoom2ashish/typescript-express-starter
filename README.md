@@ -1,6 +1,6 @@
-# Boilerplat Project for Typescript + Express.js
+# Boilerplate Project for Typescript + Express.js
 
-This repository provides boilerplat project template for Typescript + Express.js
+This repository provides boilerplate project template for Typescript + Express.js
   with some sample route and middlewares integration.
 
 
