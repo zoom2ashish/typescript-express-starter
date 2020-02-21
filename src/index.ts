@@ -1,0 +1,1 @@
+console.log('[index.js] Index file loaded');
